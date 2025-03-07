@@ -5,7 +5,7 @@ metadata:
   labels:
     app: bank
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
       app: bank
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cont1
-        image: reyadocker/mobilebankingrepo:latest
+        image: reyadocker/internetbankingrepo:latest
 ---
 apiVersion: v1
 kind: Service
