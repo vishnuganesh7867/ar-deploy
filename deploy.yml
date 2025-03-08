@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mobilebanking-rs
+  name: internetbanking-vg
   labels:
     app: bank
 spec:
-  replicas: 10
+  replicas: 4
   selector:
     matchLabels:
       app: bank
@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mobilebankingservice
+  name: internetbankingservice
 spec:
   type: LoadBalancer
   selector:
